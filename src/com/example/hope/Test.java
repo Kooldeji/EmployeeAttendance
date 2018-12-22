@@ -21,7 +21,7 @@ public class Test {
         timi = EmployeeManagement.registerEmployee(timi);
     }
 
-    public static void registerFingerPrint(){
+    public static void  registerFingerPrint(){
         register();
         File file = new File("/Users/aadedeji/Documents/code/FingerPrint/probe.png");
         EmployeeIdentification employeeIdentification = EmployeeIdentification.getInstance();

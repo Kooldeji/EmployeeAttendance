@@ -1,5 +1,7 @@
 package com.example.hope;
 
+import java.util.List;
+
 public class EmployeeManagement {
     private EmployeeDetail employeeDetail;
 
@@ -14,6 +16,10 @@ public class EmployeeManagement {
     public static EmployeeDetail registerEmployee(EmployeeDetail employeeDetail){
         Repository repository = Repository.getInstance();
         return repository.saveEmployeeDetail(employeeDetail);
+    }
+    public static List<EmployeeDetail> getAllEmployees(){
+        Repository repository = Repository.getInstance();
+        return repository.getAllEmployeeDetails();
     }
 
     public long getSalary(int noOfDays){
