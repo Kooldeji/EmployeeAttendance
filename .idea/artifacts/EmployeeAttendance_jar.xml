@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="EmployeeAttendance:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/EmployeeAttendance_jar</output-path>
+    <root id="archive" name="EmployeeAttendance.jar">
+      <element id="module-output" name="EmployeeAttendance" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/trove-3.0.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/slf4j-api-1.7.25.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/gson-2.8.5.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/noexception-0.4.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/mysql-connector.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/sourceafis-3.2.2.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
