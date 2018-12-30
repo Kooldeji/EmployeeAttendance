@@ -17,6 +17,7 @@ public class EmployeeManagement {
         Repository repository = Repository.getInstance();
         return repository.saveEmployeeDetail(employeeDetail);
     }
+
     public static List<EmployeeDetail> getAllEmployees(){
         Repository repository = Repository.getInstance();
         return repository.getAllEmployeeDetails();
