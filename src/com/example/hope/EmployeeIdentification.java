@@ -13,7 +13,7 @@ public class EmployeeIdentification {
     private static EmployeeIdentification instance;
 
     public EmployeeIdentification() {
-        repository = new Repository();
+        repository = Repository.getInstance();
         settings = repository.getSettings();
     }
 
