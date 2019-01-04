@@ -41,6 +41,7 @@ public class EmployeeIdentification {
         double highScore = 0;
         EmployeeDetail match = null;
         for (EmployeeDetail e : employeeDetails) {
+            if (e.getTemplate()==null) continue;
             double score = fingerprintMatcher.match(e.getTemplate());
             if (score > highScore) {
                 highScore = score;
