@@ -47,7 +47,7 @@ public class Repository {
         }
     }
 
-    public List<EmployeeDetail> getAllEmployeeDetails(){
+    List<EmployeeDetail> getAllEmployeeDetails(){
         List<EmployeeDetail> employeeDetails = new ArrayList<>();
         String query = String.format("SELECT * FROM %s", EMPLOYEE_TABLE);
         try {
@@ -81,7 +81,7 @@ public class Repository {
         return employeeDetail;
     }
 
-    public EmployeeDetail getEmployee(long id){
+    EmployeeDetail getEmployee(long id){
         String query =  String.format("SELECT * FROM %s where id = %s", EMPLOYEE_TABLE, id);
         try {
             Statement statement = con.createStatement();
@@ -94,7 +94,7 @@ public class Repository {
         }
         return null;
     }
-    public EmployeeDetail saveEmployeeDetail(EmployeeDetail employeeDetail) {
+    EmployeeDetail saveEmployeeDetail(EmployeeDetail employeeDetail) {
         String query;
         if (employeeDetail.getId() <= 0)
             query = String.format("INSERT INTO %s (first_name, last_name, age, deduction, attendance_count, basic_salary, sex, template) " +
@@ -103,9 +103,8 @@ public class Repository {
             query = String.format("UPDATE %s SET first_name = ?, last_name = ?, age = ?, deduction = ?, attendance_count = ?, " +
                     "basic_salary = ?, sex = ?, template = ? WHERE id = ?", EMPLOYEE_TABLE);
         try {
-            if (insertEmployeePs == null) {
-                insertEmployeePs = con.prepareStatement(query);
-            }
+            insertEmployeePs = con.prepareStatement(query);
+            
             insertEmployeePs.setString(1, employeeDetail.getFirstName());
             insertEmployeePs.setString(2, employeeDetail.getLastName());
             insertEmployeePs.setInt(3, employeeDetail.getAge());
@@ -129,7 +128,7 @@ public class Repository {
         return null;
     }
 
-    public Settings getSettings() {
+    Settings getSettings() {
         String query = String.format("SELECT * FROM %s ", SETTINGS_TABLE);
         try{
             Statement stmt = con.createStatement();
@@ -146,7 +145,7 @@ public class Repository {
         return null;
     }
 
-    public boolean saveSettings(Settings settings){
+    boolean saveSettings(Settings settings){
         String query;
         if (getSettings() == null)
             query = String.format("INSERT INTO %s (dpi, threshold) VALUES (?, ?)", SETTINGS_TABLE);
@@ -164,7 +163,7 @@ public class Repository {
         return false;
     }
 
-    public void clearEmployees() {
+    void clearEmployees() {
         try {
             String query = String.format("TRUNCATE TABLE %s", EMPLOYEE_TABLE);
             Statement statement = con.createStatement();
