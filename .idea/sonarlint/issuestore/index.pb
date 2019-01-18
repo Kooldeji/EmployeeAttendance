@@ -17,3 +17,23 @@ R
 "src/com/example/hope/Settings.java,3/c/3c631557dd54452e739bcfa7d700d62045731889
 N
 src/com/example/hope/Test.java,4/9/491cbc16a6c188e161e4c10bde1448309e094ee0
+N
+.idea/libraries/gson_2_8_5.xml,c/f/cf8bebeb0c8dc5ff4622c3bdec4e2a5ea122efc4
+S
+#.idea/libraries/mysql_connector.xml,f/3/f30f7cfaa1f62d282fe5b9865c59dca4d32ee173
+U
+%.idea/libraries/noexception_0_4_0.xml,a/7/a799cb31eb83d27c7878a99daeec5f64a254f5d7
+T
+$.idea/libraries/slf4j_api_1_7_25.xml,e/2/e24298cc3363f30472516dad811d00a8db72823e
+T
+$.idea/libraries/sourceafis_3_2_2.xml,3/2/32f3608cd50bc6fed1bf6b275a51911c2e88ceb4
+O
+.idea/libraries/trove_3_0_3.xml,4/4/442fb4c5ce17f7b415b72191e28ab049ee27a6b8
+S
+#.idea/sonarlint/issuestore/index.pb,9/f/9fe84ebb15faf917b7def6236dba604453cc61e0
+Z
+*.idea/artifacts/EmployeeAttendance_jar.xml,c/5/c5380f863ee6e6ac40e6981092e071365b439482
+Z
+*src/com/example/hope/AttendanceRecord.java,2/f/2f4d6d32a5136c1ef593d2af8a1fe5ee2d692c0e
+^
+.src/com/example/hope/AttendanceManagement.java,4/5/45bdd3a5850b9ece3c3d649cd7702067948ecae5

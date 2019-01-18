@@ -1,6 +1,8 @@
 package com.example.hope;
 
 import java.io.File;
+import java.util.Calendar;
+import java.util.GregorianCalendar;
 
 public class Test {
     private static EmployeeDetail timi;
@@ -10,11 +12,11 @@ public class Test {
         timi.setFirstName("Timi");
         timi.setLastName("Fasipe");
         timi.setSex("Male");
-        timi.setAge(21);
+        timi.setDob(new GregorianCalendar(1997, 12, 11).getTime());
         timi.setBasicSalaryPay(50000);
         timi.setDeduction(100);
         Repository.getInstance().clearEmployees();
-        takeAttendance();
+        identifyNoEmployee();
     }
 
     public static void register(){
@@ -23,31 +25,31 @@ public class Test {
 
     public static void  registerFingerPrint(){
         register();
-        File file = new File("/Users/aadedeji/Documents/code/FingerPrint/probe.png");
+        File file = new File("/Users/dakande/Documents/code/FingerPrint/probe.png");
         EmployeeIdentification employeeIdentification = EmployeeIdentification.getInstance();
         timi = employeeIdentification.registerIdentification(timi, file);
     }
     public static void identifyEmployee(){
         registerFingerPrint();
-        File file = new File("/Users/aadedeji/Documents/code/FingerPrint/matching.png");
+        File file = new File("/Users/dakande/Documents/code/FingerPrint/matching.png");
         EmployeeIdentification employeeIdentification = EmployeeIdentification.getInstance();
         EmployeeDetail p = employeeIdentification.identifyEmployee(file);
-        System.out.println("Identify Employee: ");
+        System.out.print("Identify Employee: ");
         System.out.println(p.getLastName().equals(timi.getLastName()));
     }
     public static void identifyNoEmployee(){
         registerFingerPrint();
-        File file = new File("/Users/aadedeji/Documents/code/FingerPrint/nonmatching.png");
+        File file = new File("/Users/dakande/Documents/code/FingerPrint/nonmatching.png");
         EmployeeIdentification employeeIdentification = EmployeeIdentification.getInstance();
         EmployeeDetail p = employeeIdentification.identifyEmployee(file);
-        System.out.println("Don't identify Employee: ");
+        System.out.print("Don't identify Employee: ");
         System.out.println(p == null);
     }
 
     public static void takeAttendance(){
         registerFingerPrint();
         long c = timi.getAttendanceCount();
-        File file = new File("/Users/aadedeji/Documents/code/FingerPrint/matching.png");
+        File file = new File("/Users/dakande/Documents/code/FingerPrint/matching.png");
         EmployeeIdentification employeeIdentification = EmployeeIdentification.getInstance();
         EmployeeDetail p = employeeIdentification.identifyEmployee(file);
         EmployeeManagement employeeManagement = new EmployeeManagement(p);

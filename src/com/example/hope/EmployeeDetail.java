@@ -2,15 +2,21 @@ package com.example.hope;
 
 import com.machinezoo.sourceafis.FingerprintTemplate;
 
+import java.util.Date;
+
 public class EmployeeDetail {
     private long id;
     private String firstName;
     private String lastName;
-    private int age;
+    private Date dob;
     private String sex;
     private long attendanceCount;
     private long basicSalaryPay;
     private long deduction;
+    private String department;
+    private String jobRole;
+    private String address;
+    private String phoneNumber;
     private FingerprintTemplate template;
 
     public String getFirstName() {
@@ -21,12 +27,12 @@ public class EmployeeDetail {
         this.firstName = firstName;
     }
 
-    public int getAge() {
-        return age;
+    public Date getDob() {
+        return dob;
     }
 
-    public void setAge(int age) {
-        this.age = age;
+    public void setDob(Date dob) {
+        this.dob = dob;
     }
 
     public String getSex() {
@@ -83,5 +89,37 @@ public class EmployeeDetail {
 
     public void setTemplate(FingerprintTemplate template) {
         this.template = template;
+    }
+
+    public String getDepartment() {
+        return department;
+    }
+
+    public void setDepartment(String department) {
+        this.department = department;
+    }
+
+    public String getJobRole() {
+        return jobRole;
+    }
+
+    public void setJobRole(String jobRole) {
+        this.jobRole = jobRole;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
     }
 }

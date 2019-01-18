@@ -1,8 +1,19 @@
 
-Gsquid:S1148¡"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8ÕýŠ¢ú,
-Fsquid:S1148<"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8…Ÿ‚Ôù,
-Fsquid:S1148."#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8žËÖ€ù,
-Fsquid:S1148]"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8‰€ƒ¢ú,
-Fsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8ÕýŠ¢ú,
-Gsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8ÕýŠ¢ú,
-Gsquid:S1148­"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8¤‹±¥ú,
+Rsquid:S1172"1Remove this unused method parameter "employeeId".(É‚ËÕüÿÿÿÿ8³ž¼ñ„-
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8ÏÒæñ„-
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8Üüõñ„-
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8Ô‚Þð„-
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8ÕýŠ¢ú,
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8‰€ƒ¢ú,
+Gsquid:S1168"+Return an empty collection instead of null.(¥¹ï8Õ—Üñ„-
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8¤‹±¥ú,
+Msquid:S1172"1Remove this unused method parameter "employeeId".(Ïš›°8Üüõñ„-
+{squid:S1450"_Remove the "insertEmployeePs" field and declare it as a local variable in the relevant methods.(–ˆú€8ê†ˆ¾‚-
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8ÕýŠ¢ú,
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8žËÖ€ù,
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8–«Œñ„-
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8…Ÿ‚Ôù,
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8ÕýŠ¢ú,
+Msquid:S1481",Remove this unused "records" local variable.(€åª§ûÿÿÿÿ8Ôéþñ„-
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8Ô‚Þð„-
+Gsquid:S1168"+Return an empty collection instead of null.(¥¹ï8ÏÒæñ„-

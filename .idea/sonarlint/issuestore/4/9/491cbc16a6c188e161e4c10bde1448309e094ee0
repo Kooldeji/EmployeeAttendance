@@ -1,18 +1,20 @@
 
+Zsquid:UselessImportCheck"/Remove this unused import 'java.util.Calendar'.(ÿÛö´8³·«í„-
+[
+squid:S106%"9Replace this use of System.out or System.err by a logger.(ËÇ£ôşÿÿÿÿ8Š±©í„-
+dsquid:S1075""ARefactor your code to get this URI from a customizable parameter.(§†²ûÿÿÿÿ8Š±©í„-
 U
-squid:S1068"9Replace this use of System.out or System.err by a logger.(ß’›}8ˆ…Ê¥ú,
+squid:S106&"9Replace this use of System.out or System.err by a logger.(ŞÑ½8õú–¥ú,
+dsquid:S1075*"ARefactor your code to get this URI from a customizable parameter.(¨ì¹‘ÿÿÿÿÿ8Š±©í„-
+[
+squid:S1069"9Replace this use of System.out or System.err by a logger.(×¦Çûÿÿÿÿ8Š±©í„-
+Csquid:S14813"&Remove this unused "c" local variable.(©´ğ8Š±©í„-
+[
+squid:S106-"9Replace this use of System.out or System.err by a logger.(×ã¨˜şÿÿÿÿ8Š±©í„-
+dsquid:S10754"ARefactor your code to get this URI from a customizable parameter.(§†²ûÿÿÿÿ8Š±©í„-
 U
-squid:S106$"9Replace this use of System.out or System.err by a logger.(ŞÑ½8õú–¥ú,
-dsquid:S1075 "ARefactor your code to get this URI from a customizable parameter.(Å¹ßıÿÿÿÿ8°Ïù¤ú,
-dsquid:S10752"ARefactor your code to get this URI from a customizable parameter.(Å¹ßıÿÿÿÿ8¸ë¿¥ú,
+squid:S106:"9Replace this use of System.out or System.err by a logger.(ß’›}8Š±©í„-
+Lsquid:S2110"."12" is not a valid value for setting "month".(ÊØÑ¼8˜¬í„-
+^squid:S1075"ARefactor your code to get this URI from a customizable parameter.(€ÿçX8Š±©í„-
 [
-squid:S1067"9Replace this use of System.out or System.err by a logger.(×¦Çûÿÿÿÿ8ú…Ë¥ú,
-Csquid:S14811"&Remove this unused "c" local variable.(©´ğ8¦äÅ¥ú,
-_squid:S1075"ARefactor your code to get this URI from a customizable parameter.(—æ¬¸8¶Ïé£ú,
-[
-squid:S106,"9Replace this use of System.out or System.err by a logger.(Äñçãûÿÿÿÿ8×©˜¥ú,
-[
-squid:S106+"9Replace this use of System.out or System.err by a logger.(ºŠÌíıÿÿÿÿ8÷Ó¥ú,
-dsquid:S1075("ARefactor your code to get this URI from a customizable parameter.(ÉÎÂ¥úÿÿÿÿ8×©˜¥ú,
-V
-squid:S106#"9Replace this use of System.out or System.err by a logger.(Øïêö8“ğœ¥ú,
+squid:S106."9Replace this use of System.out or System.err by a logger.(Äñçãûÿÿÿÿ8Š±©í„-

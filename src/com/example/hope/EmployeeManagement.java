@@ -4,9 +4,11 @@ import java.util.List;
 
 public class EmployeeManagement {
     private EmployeeDetail employeeDetail;
+    private static Repository repository;
 
     public EmployeeManagement(EmployeeDetail employeeDetail) {
         this.employeeDetail = employeeDetail;
+        repository = Repository.getInstance();
     }
 
     public void markPresent(){
@@ -14,16 +16,21 @@ public class EmployeeManagement {
     }
 
     public static EmployeeDetail registerEmployee(EmployeeDetail employeeDetail){
-        Repository repository = Repository.getInstance();
         return repository.saveEmployeeDetail(employeeDetail);
     }
 
     public static List<EmployeeDetail> getAllEmployees(){
-        Repository repository = Repository.getInstance();
         return repository.getAllEmployeeDetails();
     }
 
     public long getSalary(int noOfDays){
         return employeeDetail.getBasicSalaryPay()-(employeeDetail.getDeduction()*(noOfDays-employeeDetail.getAttendanceCount()));
+    }
+
+    public void saveEmployee(){
+        EmployeeDetail employeeDetail = repository.saveEmployeeDetail(this.employeeDetail);
+        if (employeeDetail != null){
+            this.employeeDetail = employeeDetail;
+        }
     }
 }
